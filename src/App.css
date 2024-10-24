@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* !for forms */
+#formBlock{
+  width: 100%;
+  height: 100vh;
+ background-image: url("https://cdn.pixabay.com/photo/2022/09/07/18/25/stone-7439317_1280.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+#formBlock > article{
+  width: 60%;
+  height: inherit;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#formBlock > article > form {
+  width: 50%;
+  height: 35vh;
+  padding: 30px;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+}
+.formgroups{
+  width: 100%;
+  height: 20%;
+  /* margin: 1px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formgroups > input{
+  width: 100%;
+  height: 35px;
+  padding: 0px 5px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+#formBlock > article > form > .formgroups:last-child input[type="submit"]{
+  background-color: rgb(22, 165, 22);
+  font-size: 19px;
+  font-weight: 600;
+  color:#fff;
+}
